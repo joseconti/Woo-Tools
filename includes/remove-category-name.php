@@ -1,6 +1,8 @@
 <?php
 
-defined( 'ABSPATH' ) || exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 function remove_category_slug( $vars ) {
 	global $wpdb;
